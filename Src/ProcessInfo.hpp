@@ -13,6 +13,7 @@ typedef QList<ProcessInfo> ProcessInfoList;
 class ProcessInfo
 {
 public:
+    ProcessInfo() = default;
     ProcessInfo(uint32_t pid, const QString& commandLine);
 
     [[nodiscard]] static ProcessInfoList collect(const QRegularExpression& regex = {});

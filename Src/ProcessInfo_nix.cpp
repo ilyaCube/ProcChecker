@@ -1,8 +1,9 @@
 #include "ProcessInfo.hpp"
+
 #include <cstdint>
 #include "OsDetection.hpp"
 
-#if defined(OS_UNIX)
+#if defined(OS_LINUX)
 
 #include <QDir>
 #include <QHash>

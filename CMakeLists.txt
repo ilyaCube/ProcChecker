@@ -2,11 +2,13 @@ cmake_minimum_required(VERSION 3.22.0)
 
 project("ProcChecker" LANGUAGES CXX)
 
+add_subdirectory("Tests")
+
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_MODULE_PATH "${CMAKE_SOURCE_DIR}/Cmake")
 
-set(PROJECT_VERSION_MAJOR "0")
+set(PROJECT_VERSION_MAJOR "1")
 set(PROJECT_VERSION_MINOR "0")
 set(PROJECT_VERSION_PATCH "0")
 
